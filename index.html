@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> to do list</title>
+    <!-- ====font links====> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300&family=Kanit:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- ======link file bootstrap====> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ======link file css=====> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class=" lightcolor">
+<div class=" text-color">
+
+<div class="container mt-lg-5">
+    <h1 class=" mb-4 mainfont"> to do list</h1>
+  <form class="mb-3 defualtfont" >
+     <div class="d-flex flex-wrap justify-content-between align-items-center  additonTask row">
+     <div class="form-group col-10 ">
+        <input class=" w-100 py-2 px-md-3 px-1 text-muted defualtcolor rounded border-0" type="text" id="taskInput" placeholder="What do you have planned ?">
+    </div>
+    <button  class="bg-transparent border-0 px-4 Btn text-color d-block"  id="btnAdd" onclick="addTask()">Add Task</button>
+    <button  class="bg-transparent border-0 px-4 Btn text-color d-none" id="btnEdit" onclick="displayEdit()" >Edit Task</button>
+   </div>
+  </form>
+   <table class="maincolor defualtfont table mt-lg-5  ">
+       <thead>
+        <tr class="row">
+        <th class="col-8 ">Task</th>
+        <th class="col-2 text-success" >Edit</th>
+        <th class="col-2 text-danger">Delete</th>
+        </tr>
+       </thead>
+       <tbody id="tBody">
+       
+
+       </tbody>
+   </table>
+
+</div>
+
+</div>
+
+    <!-- =====link file js====> -->
+    <script src="main.js"></script>
+</body>
+</html>

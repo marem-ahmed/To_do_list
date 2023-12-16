@@ -1,0 +1,56 @@
+:root{
+    --main-color: #412505;
+    --defualt-color:#DED0B6;
+    --light-color:#FAEED1;
+    --text-color:#607274;
+    --main-font: 'Kalnia', serif;
+    --defualt-font:'Kanit', sans-serif;
+;
+
+
+}
+.mainfont{
+    font-family: var(--main-font);
+}
+.defualtfont{
+    font-family: var(--defualt-font);
+}
+.maincolor{
+    color: var(--main-color);
+}
+.defualtcolor{
+    background-color: var(--defualt-color);
+}
+.lightcolor{
+    background-color: var(--light-color);
+}
+.light-text{
+    color: var(--light-color);
+}
+.text-color{
+    color: var(--text-color);
+}
+.additonTask .Btn{
+    font-weight: 500;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.tasks .Btn{
+ font-weight: 500;
+ font-size: 1.125rem;
+ cursor: pointer;
+}
+#taskInput{
+    box-shadow: #412505 5px 5px 5px;
+}
+.form-group input{
+        outline: 0;
+}
+.Btn{
+    outline: 0;
+    border: 0;
+}
+h1{
+    font-size: 3.125rem;
+    font-weight: 600;
+}
