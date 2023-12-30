@@ -37,23 +37,17 @@ function addTask(){
 // displayTaskForUser
 
 function display(){
-    var values=Object.values(tasks[0])
+var container=``;
     for(var i=0;i<tasks.length;i++){
-       var tr= tbody.insertRow();
-       for(var j=0;j<values.length;j++){
-        var td=tr.insertCell()
-        var td_1=tr.insertCell()
-        var td_2=tr.insertCell()
-        td.innerText=values[j];
-        td_1.innerHTML=`<input type="button" class=" border-0  Btn btn-outline-success  btncolor "value="Edit"  onclick="editTask(${i})"></input>`
-        td_2.innerHTML=`<input type="button" class=" border-0  Btn  btn-outline-danger "value="Delete"  onclick="deleteTask(${i})"></input>`
-        tr.setAttribute("class","row")
-        td.setAttribute("class","col-8")
-        td_1.setAttribute("class","col-2")
-        td_2.setAttribute("class","col-2")
-       }
-       
+        container+=`
+       <tr class="row">
+            <td class="col-8">${tasks[i].subjectTask}</td>
+            <td class="col-2"><button  class=" border-0 Btn btn-outline-success "  onclick="editTask(${i})">Edit</button></td>
+            <td class="col-2"><button  class=" border-0 Btn btn-outline-danger " onclick="deleteTask(${i})">Delete</button></td>
+        </tr>
+        `
     }
+    tbody.innerHTML=container;
 }
 
 // clear
