@@ -85,16 +85,7 @@ display()
   function displayEdit(){
     tasks[fix].subjectTask=tasktInput.value
     localStorage.setItem("taskslist" ,JSON.stringify(tasks));
-      var container=``;
-    for(var i=0;i<tasks.length;i++){
-        container+=`
-       <tr class="row">
-            <td class="col-8">${tasks[fix].subjectTask}</td>
-            <td class="col-2"><button  class=" border-0 Btn btn-outline-success "  onclick="editTask(${i})"></button></td>
-            <td class="col-2"><button  class=" border-0 Btn btn-outline-danger " onclick="deleteTask(${i})"></button></td>
-        </tr>
-        `
-    }
+ 
 
 display()
 clear()
